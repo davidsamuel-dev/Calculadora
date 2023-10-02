@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="calculadora">
+        <header>
+            <h1>Calculadora</h1>
+            <h2>0</h2> <!--Aqui é o visor da Calculadora, os valores informados e o resultado aparecerá aqui-->
+        </header>
+        <!-- BOTÕES -->
+        <section>
+            <input onclick="apagar.tudo()" id="apagar" type="button" value="APAGAR"> <!-- botão de apagar todo o conteúdo do visor-->
+            <input onclick="apagar.caracter()" id="deletar" type="button" value="&lt"> <!--botão de apagar caracter por caracter-->
+            <input onclick=" atualizarVisor(this)" class="op" type="button" value="+"><!--botão de soma-->
+        </section>
+
+        <section>
+            <input onclick=" atualizarVisor(this)" id="num0" type="button" value="0"> <!--botão 0-->
+            <input onclick=" atualizarVisor(this)" id="num1" type="button" value="1"> <!--botão 1-->
+            <input onclick=" atualizarVisor(this)" id="num2" type="button" value="2"> <!--botão 2-->
+            <input onclick=" atualizarVisor(this)" id="num3" type="button" value="3"> <!--botão 3-->
+            <input onclick=" atualizarVisor(this)" class="op" type="button" value="-"> <!--botão de subtração-->
+        </section>
+
+        <section>
+            <input onclick=" atualizarVisor(this)" id="num4" type="button" value="4"> <!--botão 4-->
+            <input onclick=" atualizarVisor(this)" id="num5" type="button" value="5"> <!--botão 5-->
+            <input onclick=" atualizarVisor(this)" id="num6" type="button" value="6"> <!--botão 6-->
+            <input onclick=" atualizarVisor(this)" id="num7" type="button" value="7"> <!--botão 7-->
+            <input onclick=" atualizarVisor(this)" class="op" type="button" value="*"> <!--botão de multiplicação-->
+        </section>
+
+        <section>
+            <input onclick=" atualizarVisor(this)" id="num8" type="button" value="8"> <!--botão 8-->
+            <input onclick=" atualizarVisor(this)" id="num9" type="button" value="9"> <!--botão 9-->
+            <input onclick=" atualizarVisor(this)" type="button" value="."> <!--botão de ponto-->
+            <input onclick="resultado(this)" id="resultado" type="button" value="="> <!--botao de =, ao clicar ele calcula o resultado da operação qie está no visor-->
+            <input onclick=" atualizarVisor(this)" class="op" type="button" value="/"> <!--botão de divisão-->
+        </section>
+
+    </div>
+</body>
+
+</html>
